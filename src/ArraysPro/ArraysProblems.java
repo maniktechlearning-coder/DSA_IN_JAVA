@@ -1,5 +1,7 @@
 package ArraysPro;
 
+import java.util.HashSet;
+
 public class ArraysProblems {
 
     public static int SumofNumbres( int arr[])
@@ -81,6 +83,25 @@ public class ArraysProblems {
             }
         }
         System.out.println("The largest number in the array is: " + vp);
+    }
+
+    public static  void CheckDuplicateInArray( int arr[])
+    {
+        HashSet<Integer> set = new HashSet<Integer>();
+//if we want to return the list then you have to create the list add those to the list and return
+        for(int element : arr)
+        {
+            if(set.contains(element))
+            {
+                System.out.println("Duplicate in the array");
+//                instead of printing add the elements to the list
+            }
+            set.add(element);
+        }
+    }
+
+    public static void CountTheFrequencyOfTheArrayElements(int arr[])
+    {
 
     }
 }
