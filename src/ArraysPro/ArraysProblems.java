@@ -1,0 +1,86 @@
+package ArraysPro;
+
+public class ArraysProblems {
+
+    public static int SumofNumbres( int arr[])
+    {
+        int sum = 0;
+        for( int i=0;i<arr.length;i++)
+        {
+            sum += arr[i];
+        }
+        System.out.println("The sum of the numbers in the array is: " + sum);
+        return sum;
+    }
+    public static void ProductOfArrays( int arr[])
+    {
+        int product = 1;
+        for(int i = 0;i<arr.length;i++)
+        {
+            product *= arr[i];
+        }
+        System.out.println("The product of the numbers in the array is: " + product);
+    }
+
+    public static void LargstElementInArray(int arr [])
+    {
+        int max = arr[0];
+        for( int i = 0 ; i< arr.length;i++)
+        {
+            if(arr[i] > max)
+            {
+                max = arr[i];
+            }
+        }
+        System.out.println("The largest element in the array is: " + max);
+    }
+
+    public static void SmallestElementInarray( int arr[])
+    {
+        int min =  arr[0];
+        for( int i = 0 ; i< arr.length;i++)
+        {
+            if(arr[i] < min)
+            {
+                min = arr[i];
+            }
+        }
+        System.out.println("The smallest element in the array is: " + min);
+    }
+
+    public static void ReverseTheArray( int arr[])
+    {
+        for( int i = arr.length-1; i>=0 ; i--)
+        {
+            System.out.println( arr[i] + " ");
+        }
+    }
+
+    public static  void AvarageofArrays( int arr[])
+    {
+        int sum = SumofNumbres(arr);
+        System.out.println("The sum of the numbers in the array is: " + sum);
+        double avr = (double) sum / arr.length;
+        System.out.println("The average of the numbers in the array is: " + avr);
+    }
+
+    public static void SecondLargestNumberInArray( int arr [])
+    {
+        int p = Integer.MIN_VALUE;
+        int vp = Integer.MIN_VALUE;
+
+        for( int i = 0 ; i< arr.length;i++)
+        {
+            if(arr[i] > p)
+            {
+                vp = p ;
+                p = arr[i];
+            } else if (arr[i] > vp && arr[i] != p)
+            {
+                vp = arr[i] ;
+            }
+        }
+        System.out.println("The largest number in the array is: " + vp);
+
+    }
+}
