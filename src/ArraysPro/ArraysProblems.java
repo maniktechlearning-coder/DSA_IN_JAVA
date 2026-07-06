@@ -54,9 +54,27 @@ public class ArraysProblems {
 
     public static void ReverseTheArray( int arr[])
     {
-        for( int i = arr.length-1; i>=0 ; i--)
-        {
-            System.out.println( arr[i] + " ");
+
+//        for( int i = arr.length-1; i>=0 ; i--)
+//        {
+//            System.out.println( arr[i] + " ");
+//        }
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left < right) {
+
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left++;
+            right--;
+        }
+
+        // Print the reversed array
+        for (int num : arr) {
+            System.out.print(num + " ");
         }
     }
 
