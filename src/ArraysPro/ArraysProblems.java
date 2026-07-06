@@ -1,6 +1,8 @@
 package ArraysPro;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 public class ArraysProblems {
 
@@ -102,6 +104,52 @@ public class ArraysProblems {
 
     public static void CountTheFrequencyOfTheArrayElements(int arr[])
     {
-
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for( int nums : arr)
+        {
+            map.put(nums, map.getOrDefault(nums,0)+1);
+        }
+        for(Map.Entry<Integer,Integer> entry : map.entrySet())
+        {
+            System.out.println(entry.getKey()+" "+entry.getValue());
+        }
     }
+
+    public static  void DuplicateElementsInArray(int arr [])
+    {
+        HashMap<Integer,Integer> map = new HashMap<>();
+
+        for( int nums :arr)
+        {
+            map.put(nums, map.getOrDefault(nums,0)+1);
+        }
+
+        for( HashMap.Entry<Integer, Integer> entry : map.entrySet())
+        {
+            if(entry.getValue()>1)
+            {
+                System.out.println(entry.getKey()+" "+entry.getValue());
+            }
+        }
+    }
+
+    public static void FirstNonRepeatingNumber( int arr [])
+    {
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for( int nums :arr)
+        {
+            map.put(nums , map.getOrDefault(nums,0)+1);
+        }
+
+        for( int nums :arr)
+        {
+            if( map.get(nums) == 1)
+            {
+                System.out.println("The non Repeating numbre is " + nums);
+                break;
+            }
+        }
+    }
+
+
 }
