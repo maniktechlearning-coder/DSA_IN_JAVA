@@ -169,5 +169,23 @@ public class ArraysProblems {
         }
     }
 
+    public static int[] TwoSumProblem(int arr [] , int target)
+    {
+//        this approch is only when we have no duplicate elements in the array
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for( int i = 0 ;  i< arr.length;i++)
+        {
+            int complement = target - arr[i];
+            if( map.containsKey(complement))
+            {
+                return new int[]{map.get(complement),i};
+            }
+            map.put(arr[i], i);
+        }
+        return new int[]{-1,-1};
+    }
+
+    public stati
+
 
 }
