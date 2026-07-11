@@ -184,8 +184,30 @@ public class ArraysProblems {
         }
         return new int[]{-1,-1};
     }
+//both the s and t Shuld be lower case string
+//    ASCII Value --> A-65 and a-97
+    public static boolean AnagramProblem(String s , String t)
+    {
+        if(s.length()!=t.length())
+        {
+            return false;
+        }
+         int arr[] = new int[26];
 
-    public stati
-
-
+        for( int i =0 ; i< s.length();i++)
+        {
+            arr[s.charAt(i)-'a']++;
+            arr[t.charAt(i)-'a']--;
+        }
+//if the arr elements are not zero then the those are anagrams
+// cat is formed by the act so those are anagrams
+        for( int num : arr)
+        {
+            if(num != 0 )
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }
