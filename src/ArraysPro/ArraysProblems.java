@@ -151,5 +151,26 @@ public class ArraysProblems {
         }
     }
 
+    public static void CountTheAlpabetsandNonAlphabets(String str)
+    {
+        int alpabet = 0;
+        int spaces = 0;
+        int numerics = 0;
 
+        for( int i = 0 ; i < str.length() ; i++ )
+        {
+            char ch = str.charAt(i);
+            if((ch >='A' && ch <= 'Z') || (ch >='a' && ch <='z'))
+            {
+                alpabet++;
+            }
+            else if(ch >= '0' && ch <= '9')
+            {
+                numerics++;
+            }
+            else if(ch == ' '){
+                spaces++;
+            }
+        }
+    }
 }
