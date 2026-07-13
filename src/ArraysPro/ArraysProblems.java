@@ -169,7 +169,6 @@ public class ArraysProblems {
         }
     }
 
-<<<<<<< HEAD
     public static int[] TwoSumProblem(int arr [] , int target)
     {
 //        this approch is only when we have no duplicate elements in the array
@@ -211,13 +210,12 @@ public class ArraysProblems {
         }
         return true;
     }
-=======
+
     public static void CountTheAlpabetsandNonAlphabets(String str)
     {
         int alpabet = 0;
         int spaces = 0;
         int numerics = 0;
->>>>>>> Arrays
 
         for( int i = 0 ; i < str.length() ; i++ )
         {
