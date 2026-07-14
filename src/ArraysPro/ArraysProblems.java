@@ -1,8 +1,6 @@
 package ArraysPro;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 
 public class ArraysProblems {
 
@@ -232,5 +230,55 @@ public class ArraysProblems {
                 spaces++;
             }
         }
+    }
+
+    public static List<List<String>> groupAnagrams(String str[])
+    {
+        HashMap<String, List<String>> map = new HashMap<>();
+
+        for( String s : str)
+        {
+            //convert into the arr of strings and then sort the charcater elements
+            char[] arr = s.toCharArray();
+            Arrays.sort(arr);
+
+            //Convert that charcter array back inot the string
+            String st = new String(arr);
+
+            if(!map.containsKey(st))
+            {
+                //we need to it the word does not there in the hash map then push that one to list
+                map.put(st , new ArrayList<>());
+            }
+            map.get(st).add(s);
+        }
+        //we wil return the entrie the arralist of the values back.
+        return new ArrayList<>(map.values());
+    }
+
+    public static List<List<String>> groupAnagramsApprochOptimized(String[] strs) {
+
+        HashMap<String, List<String>> map = new HashMap<>();
+
+        for (String word : strs) {
+//this is the array of 26 is the approch for the anagram also
+            int[] count = new int[26];
+
+            // Count frequency of each character
+            for (char ch : word.toCharArray()) {
+                count[ch - 'a']++;
+            }
+
+            // Convert frequency array into a unique key
+            String key = Arrays.toString(count);
+
+            if (!map.containsKey(key)) {
+                map.put(key, new ArrayList<>());
+            }
+
+            map.get(key).add(word);
+        }
+
+        return new ArrayList<>(map.values());
     }
 }
