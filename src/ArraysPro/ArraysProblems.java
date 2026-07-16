@@ -297,5 +297,73 @@ public class ArraysProblems {
 
         return flag;
     }
+
+    public static int  MissingNumberInArray(int arr[])
+    {
+        int actualsum = 0 ;
+
+        for( int num : arr)
+        {
+            actualsum += num;
+        }
+
+        int n = arr.length + 1 ;
+
+        int expectedsum = n * (n+1) / 2 ;
+
+        return expectedsum - actualsum;
+    }
+
+    public static void MoveZeroToEnd( int arr [])
+    {
+//        Input:
+//        1 0 2 0 3 0 5
+//
+//        Output:
+//        1 2 3 5 0 0 0
+        int j = 0 ;
+        for(int i = 0 ; i< arr.length ; i++ )
+        {
+            if( arr[i] != 0 )
+            {
+                arr[j] = arr[i];
+                j++;
+            }
+        }
+
+        while( j < arr.length )
+        {
+            arr[j] = 0;
+            j++;
+        }
+    }
+
+    public static void MoveZerosToFront(int arr[])
+    {
+//        Input:
+//        1 0 2 0 3
+//
+//        Output:
+//        0 0 1 2 3
+        int j = arr.length-1;
+
+        for( int i = arr.length -1 ; i >= 0 ; i-- )
+        {
+            if(arr[i] != 0)
+            {
+                arr[j] = arr[i];
+                j--;
+            }
+        }
+
+        while ( j >= 0 )
+        {
+            arr[j] = 0;
+            j--;
+        }
+
+    }
+
+
 }
 
