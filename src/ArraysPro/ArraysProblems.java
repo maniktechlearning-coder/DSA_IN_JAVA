@@ -281,4 +281,21 @@ public class ArraysProblems {
 
         return new ArrayList<>(map.values());
     }
+
+    public static boolean CheckSortedArray(int arr[])
+    {
+        boolean flag = true;
+
+        for(int index = 1; index < arr.length; index++)
+        {
+            if(arr[index] > arr[index-1])
+            {
+                flag = false;
+                break;
+            }
+        }
+
+        return flag;
+    }
 }
+
