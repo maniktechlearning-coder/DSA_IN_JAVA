@@ -1,5 +1,10 @@
 package SearchingProblems;
 
+
+//Problem	When arr[mid] == target
+//Binary Search	return mid;
+//First Occurrence	answer = mid; right = mid - 1;
+//Last Occurrence	answer = mid; left = mid + 1;
 public class SearcingAlgorithums {
 
     public static int LinearSearching( int arr[] , int target)
@@ -72,7 +77,7 @@ public class SearcingAlgorithums {
         return ans;
     }
 
-    publi static int lastOccurenceOfTheElementInSorted( int[] arr , int target )
+    public static int lastOccurenceOfTheElementInSorted( int[] arr , int target )
     {
         int ans = -1 ;
         int left = 0;
