@@ -1,0 +1,99 @@
+[33mcommit 894b9739b38f4997618140e1bc0c2ff86cd18929[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Thu Jul 16 23:20:53 2026 +0530
+
+    Commiting the movingthzeros
+
+[33mcommit 9896142c311f04cce24f3df72481b7fccaf9b73c[m[33m ([m[1;31morigin/TopKElements[m[33m, [m[1;32mTopKElements[m[33m)[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Thu Jul 16 22:46:22 2026 +0530
+
+    Commiting the CheckSortedArray
+
+[33mcommit 1ec8d3c26d68ec26d4072ce304af4513ce049d96[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Tue Jul 14 22:59:03 2026 +0530
+
+    Commiting the Grouping the anagrams
+
+[33mcommit 466aee153105982a30ca5649ae46cea632367f52[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Mon Jul 13 23:09:16 2026 +0530
+
+    Commiting the changes related to the build issues
+
+[33mcommit 6d1e1dce9403907968bc6ec7a18b23fd5a5a70e1[m
+Merge: e914cb3 2efd665
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Mon Jul 13 22:53:10 2026 +0530
+
+    Merge Arrays into master
+
+[33mcommit 2efd6656530bb7591b7d4be1e26bb17794854e02[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Mon Jul 13 22:43:06 2026 +0530
+
+    adding the solution for the Count of the alphabetic
+
+[33mcommit e914cb30ce0fd3af79f49bb0aa3449a58194d7b8[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Mon Jul 13 22:03:04 2026 +0530
+
+    adding the solution for the Anagrams
+
+[33mcommit baa566c1648c7b387a1dac578a4778e8835588ec[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Sat Jul 11 17:40:15 2026 +0530
+
+    adding the solution for the Anagrams
+
+[33mcommit b58db9c9e36750ab50dd579afa27c0b2f9d453e5[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Mon Jul 6 23:09:18 2026 +0530
+
+    Added the arrays problems
+
+[33mcommit d17da71753a441144fc16948c9887689739cc9fb[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Mon Jul 6 22:04:05 2026 +0530
+
+    Added the arrays problems
+
+[33mcommit a13b0ab0b65f4c624ef7b0f27dd0baec7afd56f3[m
+Merge: c15b408 b6f3b2d
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Mon Jul 6 21:19:16 2026 +0530
+
+    Merge pull request #1 from maniktechlearning-coder/Arrays
+    
+    Added the arrays problems
+
+[33mcommit b6f3b2d8ea5d8751ed628820c82d434d7a933918[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Mon Jul 6 21:16:42 2026 +0530
+
+    Added the arrays problems
+
+[33mcommit c15b408983b495c5f0514a15ebc2e44866052d73[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Sun Jul 5 22:51:27 2026 +0530
+
+    Added the arrays problems
+
+[33mcommit 052d5d4f500af314cdfd630d12c5ca83a942525b[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Sun Jul 5 20:06:43 2026 +0530
+
+    Added the arrays problems
+
+[33mcommit 8df4297352e3803fc73d7c86d0d71752da6a470e[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Sun Jul 5 19:42:24 2026 +0530
+
+    Created the Package and Class for Arrays
+
+[33mcommit f28feae68395eec2f06474352a292d3c372d100d[m
+Author: maniktechlearning-coder <maniktechlearning@gmail.com>
+Date:   Sun Jul 5 19:29:10 2026 +0530
+
+    Initial DSA commit

@@ -364,6 +364,94 @@ public class ArraysProblems {
 
     }
 
+    public static void MoveNegativeNumberToEnd(int arr[])
+    {
+//        order of the array cannot be mentained and if you wnat we need to use the one extra array for that
+        int left = 0 ;
+        int right = arr.length -1 ;
+
+        while( left < right )
+        {
+            while(left < right && arr[left] < 0)
+            {
+                left ++ ;
+            }
+            while( left < right && arr[right] >= 0)
+            {
+                right -- ;
+            }
+
+            if( left < right)
+            {
+                int temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+            }
+        }
+    }
+
+    public static void MoveNegativeNumbersToRight( int arr[])
+    {
+        int left = 0 ;
+        int right = arr.length -1 ;
+
+        while( left < right )
+        {
+            while(left < right && arr[left] >= 0)
+            {
+                left ++ ;
+            }
+
+            while(left < right && arr[right] < 0)
+            {
+                right -- ;
+            }
+
+            if( left < right)
+            {
+                int temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+            }
+        }
+    }
+
+    public static void SepearateTheOddEven( int arr[])
+    {
+//        keep the even in the left and odd in the left
+        int left = 0;
+        int right = arr.length-1;
+
+        while( left < right)
+        {
+            while( left < right && arr[left] % 2 == 0 )
+            {
+                left ++ ;
+            }
+            while( left < right && arr[right] % 2 != 0)
+            {
+                right--;
+            }
+//            swap the number of the array
+            if( left < right)
+            {
+                int temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+            }
+        }
+    }
+
+    public static void RemoveTheDuplicatesFromUnsortedArray( int arr[])
+    {
+        // 2 3 4 5 1 6 6 7 5 I/P --> 1234567
+        Set<Integer> set = new LinkedHashSet<>();
+
+        for( int num : arr)
+        {
+            set.add(num);
+        }
+    }
 
 }
 
