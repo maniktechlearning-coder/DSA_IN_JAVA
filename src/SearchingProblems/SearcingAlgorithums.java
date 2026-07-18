@@ -35,14 +35,66 @@ public class SearcingAlgorithums {
                 return mid;
             }
             else if( target > arr[mid])
+            //when the else if condition is false then we need to left because that element is above the mid
             {
-                left = mid + 1;
+                right = mid - 1 ;
             }
             else {
-                right = mid - 1;
+                left = mid + 1;
             }
         }
         return -1 ;
     }
 
+    public static int firstOcurenceOfArrayInSorted( int[] arr , int target )
+    {
+        int ans = -1 ;
+        int left =0;
+        int right = arr.length-1;
+
+        while(left <= right)
+        {
+            int mid = left + (right - left)/2 ;
+            if(arr[mid] == target)
+            {
+                ans = mid ;
+                right = mid -1 ;//we need to move towards the left to get the first occurence and
+                //if we want the laste then we need to make the - to +
+            }
+            else if(arr[mid] > target)
+            {
+                right = mid - 1 ;
+            }
+            else {
+                left = mid + 1;
+            }
+        }
+        return ans;
+    }
+
+    publi static int lastOccurenceOfTheElementInSorted( int[] arr , int target )
+    {
+        int ans = -1 ;
+        int left = 0;
+        int right = arr.length-1;
+
+        while(left <= right)
+        {
+            int mid = left + (left + right)/2;
+            if( arr[mid] == target)
+            {
+                ans = mid;
+                //we need to do the searching in the right for the last occrence
+                right =mid + 1 ;
+            }
+            else if (arr[mid] > target)
+            {
+                right = mid -1;
+            }
+            else {
+                left = mid + 1;
+            }
+        }
+        return ans;
+    }
 }
