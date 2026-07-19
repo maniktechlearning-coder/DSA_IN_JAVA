@@ -125,4 +125,19 @@ public class SearcingAlgorithums {
         }
         return left; //we need to retur the left becaue when the left and right value becomes smae then we need to return left only so
     }
+
+    public static void leftRotateByOne(int[] arr)
+    {
+        // Step 1: Store the first element
+        int temp = arr[0];
+
+        // Step 2: Shift every element one position to the left
+        for (int i = 1; i < arr.length; i++)
+        {
+            arr[i - 1] = arr[i];
+        }
+
+        // Step 3: Place the first element at the end
+        arr[arr.length - 1] = temp;
+    }
 }
